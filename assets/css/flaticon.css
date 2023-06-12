@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf?ff88026be594f9601fd63eaa39b83281") format("truetype"),
+url("../fonts/flaticon.woff?ff88026be594f9601fd63eaa39b83281") format("woff"),
+url("../fonts/flaticon.woff2?ff88026be594f9601fd63eaa39b83281") format("woff2"),
+url("../fonts/flaticon.eot?ff88026be594f9601fd63eaa39b83281#iefix") format("embedded-opentype"),
+url("../fonts/flaticon.svg?ff88026be594f9601fd63eaa39b83281#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-brightness:before {
+    content: "\f101";
+}
+.flaticon-user:before {
+    content: "\f102";
+}
+.flaticon-shopping-bag:before {
+    content: "\f103";
+}
+.flaticon-calendar:before {
+    content: "\f104";
+}
+.flaticon-clock:before {
+    content: "\f105";
+}
+.flaticon-loupe:before {
+    content: "\f106";
+}
+.flaticon-left-arrow:before {
+    content: "\f107";
+}
+.flaticon-arrow:before {
+    content: "\f108";
+}
+.flaticon-twitter:before {
+    content: "\f109";
+}
+.flaticon-linkedin:before {
+    content: "\f10a";
+}
+.flaticon-pinterest:before {
+    content: "\f10b";
+}
+.flaticon-instagram:before {
+    content: "\f10c";
+}
+.flaticon-play-button-arrowhead:before {
+    content: "\f10d";
+}
+.flaticon-upload:before {
+    content: "\f10e";
+}
+.flaticon-organic-food:before {
+    content: "\f10f";
+}
+.flaticon-pantone:before {
+    content: "\f110";
+}
+.flaticon-certificate:before {
+    content: "\f111";
+}
+.flaticon-facebook:before {
+    content: "\f112";
+}
+.flaticon-facebook-1:before {
+    content: "\f113";
+}
+.flaticon-facebook-2:before {
+    content: "\f114";
+}
+.flaticon-social-network:before {
+    content: "\f115";
+}
+.flaticon-mail:before {
+    content: "\f116";
+}
+.flaticon-mail-1:before {
+    content: "\f117";
+}
+.flaticon-printing:before {
+    content: "\f118";
+}
+.flaticon-print:before {
+    content: "\f119";
+}

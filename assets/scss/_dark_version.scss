@@ -1,0 +1,121 @@
+body {
+    &.dark {
+        background-color: #171717;
+
+        .social-style-02 ul li a, .account-cart ul li a {
+            color: #DEDEDE;;
+        }
+
+        .menu-icon-02 {
+            ul {
+                li:nth-child(1), li:nth-child(2), li:nth-child(3) {
+                    background-color:#DEDEDE;
+                }
+            }
+        }
+
+        .nav-style-02 {
+            .main-menu {
+                nav {
+                    &>ul {
+                        &>li {
+                            &>a {
+                                color: #DEDEDE !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .search.search-02 form button i {
+            color: #bdb5b5;
+        } 
+
+        .search.search-02 form input {
+            color: #efe9e9 !important;
+        }
+
+        // .banner-area-wrapper .single-banner-item:first-child {
+        //     border-left: 0;
+        // }
+
+        // .banner-area-wrapper .single-banner-item:last-child {
+        //     border-right: 0;
+        // }
+
+        .banner-area-wrapper .single-banner-item {
+            border-color: #171717;
+        }
+
+        .single-post-item .content .title-new a {
+            color: #fdfcfc;
+        }
+
+        .post-meta .post-meta-list li .by, .post-meta .post-meta-list li .date, .post-meta .post-meta-list li .time {
+            color: #c9c5c5;
+        }
+
+        .post-meta .post-meta-list li .author, .post-meta .post-meta-list li .icon {
+            color: #a3a3a3;
+        }
+
+        .section-title-wrap .section-title-new {
+            color: #fff;
+        }
+
+        .arrow-style-01 .slick-arrow .icon {
+            color: #d5cdcd;
+        }
+
+        .title-new a {
+            color: #f3f1f1;
+        }
+
+        .info {
+            color: #d7d4d4;
+        }
+
+       .featured-blog-post-area .social-media-link li a:hover {
+            color: #DC1559; 
+        }
+
+        .widget-style-default {
+            background: #181818;
+        }
+
+        .widget-title {
+            color: #fff;
+        }
+
+        .search-widget form .search-form button {
+            border: 1px solid #686868;
+            background-color: #686868;
+        }
+
+        h4 a {
+            color: #fff;
+        }
+
+        .news-area.style-02 .mnews .info {
+            color: #d7d4d4;
+        }
+
+        .call-to-action-area-wrapper .cta-content-wrap .author-wrap .content-box .title {
+            color: #cbcbcb;
+        }
+
+        .footer-style-04 .footer-widget .footer-link-list .link-item a {
+            color: #c7c5c5;
+        }
+
+        .tag-wrapper.v-02 .tag-list li a {
+            color: #c9c4c4;
+        }
+
+        .footer-widget .copyright .info {
+            color: #b7acac;
+        }
+    }
+}
+

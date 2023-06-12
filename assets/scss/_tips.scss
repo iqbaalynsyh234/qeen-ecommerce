@@ -1,0 +1,303 @@
+@use  '../scss/common' as *;
+@use  '../scss/mixins' as *;
+@use  '../scss/variables' as *;
+
+/*
+============================
+4. tips
+============================
+*/
+
+
+.tips-area{
+    background: $tipsbg;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    position: relative;
+}
+.tips-content{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: $white;
+    padding: 25px;
+    padding-right: 40px;
+    transition: .3s ease-out;
+    z-index: 1;
+    & h2{
+        font-size: 20px;
+        line-height: 2rem;
+        margin-bottom: 0;
+        color: $primary_color;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: $primary_color;
+        z-index: -1;
+        color: $white;
+        transition: all 0.3s ease-out 0s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+        & h2{
+            color: $white;
+        }
+    }
+}
+.tips{
+    position: relative;
+    &:hover  &__thumb{
+        &::before{
+            transform: scale(1.1);
+            @include transition(.3s);
+        }
+    }
+}
+.tips-items{
+    padding: 25px;
+}
+.slick-editing-two{
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.tipsbtn {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    border: 0;
+    background: #fff;
+    position: absolute;
+    left: 17px;
+    top: -65px;
+    z-index: 9;
+    color: $primary_color;
+    cursor: pointer;
+    @include transition(.3s);
+    z-index: 2;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: $primary_color;
+        z-index: -1;
+        color: $white;
+        transition: all 0.3s ease-out 0s;
+    }
+    & i{
+        @include transition(.3s);
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+        color: $white;
+    }
+
+}
+
+button.tipsbtn.next-arrow-tips {
+    @extend .tipsbtn;
+    left: 95%;
+    cursor: pointer;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: $primary_color;
+        z-index: -1;
+        color: $white;
+        transition: all 0.3s ease-out 0s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+        color: $white;
+    }
+}
+.video-bg{
+    padding: 260px 0;
+    position: relative;
+    text-align: center;
+    &::before{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        border: 1px solid $white;
+        content: "";
+        transform: scale(1);
+        @include transition(.2s);
+    }
+}
+.video-button {
+    display: inline-block;
+    height: 118px;
+    width: 118px;
+    line-height: 118px;
+    text-align: center;
+    background: $white;
+    border-radius: 50%;
+    font-size: 45px;
+    color: $primary_color;
+    position: relative;
+    z-index: 999;
+    padding-left: 8px;
+}
+
+.service-area{
+    background: $tipsbg;
+    padding: 40px 0;
+    padding-top: 50px;
+}
+.service{
+    background: $white;
+    padding: 25px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    @include transition(.2s);
+    position: relative;
+    &:hover .service-hover{
+        transform: translateY(0);
+    }
+}
+.service-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/service-hover.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transform: translateY(300px);
+    @include transition(.3s);
+}
+.readmore-btn{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    padding: 8px 30px;
+    background: $white;
+    color: $primary_color;
+    text-transform: capitalize;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: $primary_color;
+        z-index: -1;
+        color: $white;
+        transition: all 0.3s ease-out 0s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+        color: $white;
+    }
+}
+.instagram{
+    position: relative;
+    overflow: hidden;
+    padding-right: 30px;
+    &:hover{
+        &::before{
+            height: 100%;
+            @include transition(.2s);
+        }
+    }
+    &:hover .instagramHover{
+        top: 50%;
+        @include transition(.3s);
+    }
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0%;
+        @include transition(.4s);
+        width: 100%;
+        content: "";
+        background: rgb(248,248,248);
+        background: linear-gradient(60deg, rgba(248,248,248,.3) 0%, rgba(255,255,255,.3) 40%);
+    }
+}
+.instagram-area{
+    padding: 70px 0;
+    padding-top: 0;
+}
+
+.instagramHover{
+    position: absolute;
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: $primary_color;
+    @include transition(.4s);
+}
+
+
+.tips__thumb::before {
+    position: absolute;
+    content: "";
+    left: 30px;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    border: 1px solid #fff;
+    transform: scale(1);
+    @include transition(.3s);
+}
+.hover-effect-play{
+    border: 2px solid #f1f1f1;
+    position: relative;
+    &:hover{
+        border: 2px solid $white;
+        background-color: transparent;
+        color: $white;
+    }
+}
+.blogHome-active.index-three button {
+    border: 0 !important;
+}
+.hero-single:nth-child(even) {
+    margin-right: 0;
+}
+.about-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}

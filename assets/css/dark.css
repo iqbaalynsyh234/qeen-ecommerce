@@ -1,0 +1,73 @@
+body.dark {
+  background-color: #171717;
+}
+body.dark .social-style-02 ul li a, body.dark .account-cart ul li a {
+  color: #DEDEDE;
+}
+body.dark .menu-icon-02 ul li:nth-child(1), body.dark .menu-icon-02 ul li:nth-child(2), body.dark .menu-icon-02 ul li:nth-child(3) {
+  background-color: #DEDEDE;
+}
+body.dark .nav-style-02 .main-menu nav > ul > li > a {
+  color: #DEDEDE !important;
+}
+body.dark .search.search-02 form button i {
+  color: #bdb5b5;
+}
+body.dark .search.search-02 form input {
+  color: #efe9e9 !important;
+}
+body.dark .banner-area-wrapper .single-banner-item {
+  border-color: #171717;
+}
+body.dark .single-post-item .content .title-new a {
+  color: #fdfcfc;
+}
+body.dark .post-meta .post-meta-list li .by, body.dark .post-meta .post-meta-list li .date, body.dark .post-meta .post-meta-list li .time {
+  color: #c9c5c5;
+}
+body.dark .post-meta .post-meta-list li .author, body.dark .post-meta .post-meta-list li .icon {
+  color: #a3a3a3;
+}
+body.dark .section-title-wrap .section-title-new {
+  color: #fff;
+}
+body.dark .arrow-style-01 .slick-arrow .icon {
+  color: #d5cdcd;
+}
+body.dark .title-new a {
+  color: #f3f1f1;
+}
+body.dark .info {
+  color: #d7d4d4;
+}
+body.dark .featured-blog-post-area .social-media-link li a:hover {
+  color: #DC1559;
+}
+body.dark .widget-style-default {
+  background: #181818;
+}
+body.dark .widget-title {
+  color: #fff;
+}
+body.dark .search-widget form .search-form button {
+  border: 1px solid #686868;
+  background-color: #686868;
+}
+body.dark h4 a {
+  color: #fff;
+}
+body.dark .news-area.style-02 .mnews .info {
+  color: #d7d4d4;
+}
+body.dark .call-to-action-area-wrapper .cta-content-wrap .author-wrap .content-box .title {
+  color: #cbcbcb;
+}
+body.dark .footer-style-04 .footer-widget .footer-link-list .link-item a {
+  color: #c7c5c5;
+}
+body.dark .tag-wrapper.v-02 .tag-list li a {
+  color: #c9c4c4;
+}
+body.dark .footer-widget .copyright .info {
+  color: #b7acac;
+}

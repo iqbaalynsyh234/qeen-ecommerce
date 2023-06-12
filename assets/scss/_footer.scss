@@ -1,0 +1,132 @@
+@use  '../scss/common' as *;
+@use  '../scss/mixins' as *;
+@use  '../scss/variables' as *;
+
+/*
+============================
+6. footer
+============================
+*/
+
+
+.footer-area{
+    background: $footerbg;
+    padding: 70px;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.leaf-one{
+    position: absolute;
+    left: 0;
+}
+.leaf-two{
+    position: absolute;
+    top: 0;
+}
+.copyright-text{
+    & p{
+        color: #828282;
+    }
+}
+.subscribe-box{
+    position: relative;
+    margin-bottom: 30px;
+    & form{
+        position: relative;
+        & input{
+            width: 100%;
+            padding: 20px 30px;
+            padding-left: 90px;
+            padding-right: 214px;
+            &::placeholder{
+                text-transform: capitalize;
+            }
+        }
+    }
+    & p{
+        color: $white;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 40px;
+        font-family: $jost;
+    }
+}
+.logo-footer{
+    margin-bottom: 30px;
+}
+.submit-btn-2{
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    padding: 10px 25px;
+    color: $white;
+    background: $primary_color;
+    border: 0;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .2s linear;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: #1D1D1D;
+        z-index: -1;
+        color: $white;
+        transition: all 0.3s ease-out 0s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+        color: $white;
+    }
+}
+.mail-btn-3 {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+}
+.social-footer{
+    margin-bottom: 30px;
+}
+.social.social-footer{
+    border-bottom: 1px dashed #707070;
+    padding-bottom: 30px;
+    & ul{
+        & li{
+            & a{
+                border: 1px solid #5a5a5a;
+                color: #5a5a5a;
+                transition: .2s linear;
+                &:hover{
+                    background-color:$primary_color;
+                    color: $white;
+                    transition: .2s linear;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+    }
+
+}
+
+.logo-footer {
+    width: 170px;
+    margin: auto;
+    margin-bottom: 30px;
+    & img{
+        width: 100%;
+    }
+}
